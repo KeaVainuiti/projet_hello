@@ -2,11 +2,6 @@
 //connexion au serveur de base de données
 require('connexion_bdd.php');
 
-//$name = $_POST['Name'];
-//$translate = $_POST['Translate'];
-//var_dump($name);
-
-
 ?>
 
 

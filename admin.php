@@ -41,7 +41,6 @@ require('connexion_bdd.php');
             $id = $_POST['id_langue'];
 
             // j"execute ma requête supprimer
-            // dans ma fonction deleteDbShoop
             $langue->deletelangue($id);
         }
 
@@ -54,9 +53,7 @@ require('connexion_bdd.php');
             $etat = "fermer";
             $new_name = $_POST['new_name'];
             $new_translate = $_POST['new_translate'];
-            $id_livre = $_POST['id_livre'];
-
-            $langue->updatelangue($new_nom, $new_prix, $id_livre);
+            $langue->updatelangue($new_name);
         }
 
 
@@ -75,7 +72,7 @@ require('connexion_bdd.php');
 
     $etat = "fermer";
 }
-    ?>
+?>
 
 </body>
 </html>
